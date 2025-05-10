@@ -4,7 +4,7 @@ config-version: 2
 
 profile: 'default'
 
-model-paths: ["models"]
+model-paths: ["models/Dbt_practice"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
@@ -17,7 +17,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  Dbt_practice:  # <-- should match folder name inside models/
+  Dbt_practice:
     staging:
       +materialized: view
     dimensions:
