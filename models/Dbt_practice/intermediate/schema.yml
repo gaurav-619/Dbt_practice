@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: int_crop_weather_aqi
+    description: "Intermediate model joining crop weather data with latest AQI readings"
+    columns:
+      - name: state
+        description: "State of cultivation"
+      - name: crop
+        description: "Crop name"
+      - name: crop_year
+        description: "Year of cultivation"
+      - name: yield
+        description: "Crop yield per hectare"
+      - name: pm2_5
+        description: "PM2.5 level"
+      - name: pm10
+        description: "PM10 level"
+      - name: no2
+        description: "NO2 level"
+      - name: co
+        description: "Carbon monoxide"
+      - name: o3
+        description: "Ozone level"
+      - name: so2
+        description: "SO2 level"

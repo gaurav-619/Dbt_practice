@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: dim_crop
+    description: "Dimension model for distinct crop types"
+    columns:
+      - name: crop
+        description: "Crop name"
+
+  - name: dim_season
+    description: "Dimension model for distinct weather categories"
+    columns:
+      - name: avg_temp
+        description: "Average temperature"
+      - name: min_temp
+        description: "Minimum temperature"
+      - name: max_temp
+        description: "Maximum temperature"
+      - name: precipitation
+        description: "Precipitation level"
+
+  - name: dim_state
+    description: "Dimension model for distinct states in both crop and AQI data"
+    columns:
+      - name: state
+        description: "State name"

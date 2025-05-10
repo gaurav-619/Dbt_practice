@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: fact_crop_weather
+    description: "Fact model for crop metrics and weather conditions"
+    columns:
+      - name: state
+        description: "State of cultivation"
+      - name: crop
+        description: "Crop name"
+      - name: crop_year
+        description: "Year of cultivation"
+      - name: season
+        description: "Season (Rabi, Kharif, etc.)"
+      - name: area
+        description: "Area in hectares"
+      - name: production
+        description: "Total production"
+      - name: yield
+        description: "Yield per hectare"
+      - name: annual_rainfall
+        description: "Annual rainfall"
+      - name: fertilizer
+        description: "Fertilizer use (kg/ha)"
+      - name: pesticide
+        description: "Pesticide use (kg/ha)"
+      - name: avg_temp
+        description: "Average temperature"
+      - name: min_temp
+        description: "Minimum temperature"
+      - name: max_temp
+        description: "Maximum temperature"
+      - name: precipitation
+        description: "Precipitation in mm"
+
+  - name: fact_aqi
+    description: "Fact model for latest air quality index readings by state"
+    columns:
+      - name: state
+        description: "State where AQI was recorded"
+      - name: timestamp
+        description: "Timestamp of the reading"
+      - name: pm2_5
+        description: "PM2.5 concentration"
+      - name: pm10
+        description: "PM10 concentration"
+      - name: no2
+        description: "NO2 concentration"
+      - name: co
+        description: "CO concentration"
+      - name: o3
+        description: "Ozone level"
+      - name: so2
+        description: "Sulfur dioxide level"

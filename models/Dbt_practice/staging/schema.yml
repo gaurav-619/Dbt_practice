@@ -1,0 +1,58 @@
+version: 2
+
+models:
+  - name: stg_crop_weather
+    description: "Staging model for crop and weather merged data"
+    columns:
+      - name: crop
+        description: "Type of crop"
+      - name: crop_year
+        description: "Year the crop was grown"
+      - name: season
+        description: "Season of cultivation"
+      - name: state
+        description: "Indian state"
+      - name: area
+        description: "Cultivated area (hectares)"
+      - name: production
+        description: "Production output"
+      - name: annual_rainfall
+        description: "Annual rainfall in mm"
+      - name: fertilizer
+        description: "Fertilizer usage in kg/ha"
+      - name: pesticide
+        description: "Pesticide usage in kg/ha"
+      - name: yield
+        description: "Yield per hectare"
+      - name: avg_temp
+        description: "Average temperature (°C)"
+      - name: min_temp
+        description: "Minimum temperature (°C)"
+      - name: max_temp
+        description: "Maximum temperature (°C)"
+      - name: precipitation
+        description: "Precipitation (mm)"
+
+  - name: stg_live
+    description: "Staging model for live AQI data from OpenWeather API"
+    columns:
+      - name: state
+        description: "Indian state"
+      - name: latitude
+        description: "Latitude of the state's capital"
+      - name: longitude
+        description: "Longitude of the state's capital"
+      - name: timestamp
+        description: "Timestamp of the AQI measurement"
+      - name: pm2_5
+        description: "PM2.5 concentration"
+      - name: pm10
+        description: "PM10 concentration"
+      - name: no2
+        description: "Nitrogen dioxide concentration"
+      - name: co
+        description: "Carbon monoxide concentration"
+      - name: o3
+        description: "Ozone concentration"
+      - name: so2
+        description: "Sulfur dioxide concentration"

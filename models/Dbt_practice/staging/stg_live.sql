@@ -1,0 +1,1 @@
+SELECT * from dbt-crop.crop_weather_ds.live_aqi_data
